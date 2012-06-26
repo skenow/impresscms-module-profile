@@ -227,7 +227,7 @@ class mod_profile_Field extends icms_ipf_Object {
 				//when we cannot convert it to a UNIX timestamp?
 				return str_replace("-", "/", $value);
 			case "date":
-				if ($value > 0) return formatTimestamp($value, 's');
+				if ($value != 0) return formatTimestamp($value, 's');
 				return "";
 				break;
 			case "datetime":
