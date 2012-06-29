@@ -100,12 +100,9 @@ switch($op) {
 		if ($user->getVar('uid') != icms::$user->getVar('uid')) {
 			if ($pass != '') {
 				$icmspass = new icms_core_Password();
-				$salt = icms_core_Password::createSalt();
-				$pass = $icmspass->encryptPass($pass, $salt, $icmsConfigUser['enc_type']);
+				$pass = $icmspass->encryptPass($pass);
 				$user->setVar('pass', $pass);
 				$user->setVar('pass_expired', 0);
-				$user->setVar('enc_type', $icmsConfigUser['enc_type']);
-				$user->setVar('salt', $salt);
 			}
 			$user->setVar('level', (int)$_POST['level']);
 		}

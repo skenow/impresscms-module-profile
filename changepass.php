@@ -48,11 +48,8 @@ if (!isset($_POST['submit'])) {
 		redirect_header(PROFILE_URL.'changepass.php', 2, $stop);
 	} else {
 		$icmspass = new icms_core_Password();
-		$salt = icms_core_Password::createSalt();
-		$pass = $icmspass->encryptPass($_POST['password'], $salt, $icmsConfigUser['enc_type']);
-		icms::$user->setVar('salt', $salt, true);
+		$pass = $icmspass->encryptPass($_POST['password']);
 		icms::$user->setVar('pass', $pass, true);
-		icms::$user->setVar('enc_type', $icmsConfigUser['enc_type'], true);
 
 		if ($member_handler->insertUser(icms::$user)) {
 			redirect_header(PROFILE_URL.'/userinfo.php?uid='.icms::$user->getVar('uid'), 2, _MD_PROFILE_PASSWORDCHANGED);

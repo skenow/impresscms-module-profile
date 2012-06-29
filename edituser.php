@@ -55,12 +55,9 @@ switch ($op) {
 			if ($edituser->getVar('uid') != icms::$user->getVar('uid')) {
 				if ($pass != '') {
 					$icmspass = new icms_core_Password();
-					$salt = icms_core_Password::createSalt();
-					$pass = $icmspass->encryptPass($pass, $salt, $icmsConfigUser['enc_type']);
+					$pass = $icmspass->encryptPass($pass);
 					$edituser->setVar('pass', $pass);
 					$edituser->setVar('pass_expired', 0);
-					$edituser->setVar('enc_type', $icmsConfigUser['enc_type']);
-					$edituser->setVar('salt', $salt);
 				}
 				$edituser->setVar('level', (int)$_POST['level']);
 			}
