@@ -20,7 +20,7 @@ defined("ICMS_ROOT_PATH") or die("ICMS root path not defined");
 $modversion = array(
 /**  General Information  */
 	'name'						=> _MI_PROFILE_NAME,
-	'version'					=> 2.0,
+	'version'					=> 2.1,
 	'description'				=> _MI_PROFILE_DESC,
 	'author'					=> "phoenyx, Jan Pedersen, Marcello Brandao, Sina Asghari, Gustavo Pilla.",
 	'credits'					=> "The XOOPS Project, The ImpressCMS Project, The SmartFactory, Ackbarr, Komeia, vaughan, alfred.",
@@ -36,9 +36,9 @@ $modversion = array(
 	'image'						=> "images/icon_big.png", /* for backward compatibility */
 
 /**  Development information */
-	'status_version'			=> "Final",
-	'status'					=> "Final",
-	'date'						=> "18 Sept 2011",
+	'status_version'			=> "Beta",
+	'status'					=> "Beta",
+	'date'						=> "July 2012",
 	'author_word'				=> "",
 	'warning'					=> _CO_ICMS_WARNING_FINAL,
 
@@ -573,4 +573,3 @@ $modversion['autotasks'][] = array(
 	'onfinish'	=> '0',
 	'name'		=> _MI_PROFILE_AUTOTASK_REACTIVATE_SUSPENDED_USERS,
 	'code'		=> 'include/autotasks/reactivate_suspended.php');
-?>

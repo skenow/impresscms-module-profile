@@ -1,5 +1,12 @@
 Profile Changelog
 
+=== Profile 2.1 Beta ===
+Release date: July 2012
+Revision: 
+
+'''Improved'''
+* Password encryption methods
+
 === Profile 2.0 Final ===
 Release date: 18 Sept 2011
 Revision: 22692
