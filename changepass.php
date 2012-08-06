@@ -47,8 +47,7 @@ if (!isset($_POST['submit'])) {
 	if ($stop != '') {
 		redirect_header(PROFILE_URL.'changepass.php', 2, $stop);
 	} else {
-		$icmspass = new icms_core_Password();
-		$pass = $icmspass->encryptPass($password);
+		$pass = icms_core_Password::encryptPass($password);
 		icms::$user->setVar('pass', $pass, true);
 
 		if ($member_handler->insertUser(icms::$user)) {
