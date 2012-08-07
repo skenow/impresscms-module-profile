@@ -74,7 +74,8 @@ switch ($op) {
 			$vpass = isset($_POST['vpass']) ? icms_core_DataFilter::stripSlashesGPC($_POST['vpass']) : '';
 			$pass = isset($_POST['pass']) ? icms_core_DataFilter::stripSlashesGPC($_POST['pass']) : '';
 
-			$enc_pass = icms_core_Password::encryptPass($pass);
+            $icmspass = new icms_core_Password();
+			$enc_pass = $icmspass->encryptPass($pass);
 
 			if ($icmsConfigUser['use_captcha'] == 1) {
 				$icmsCaptcha = icms_form_elements_captcha_Object::instance();

@@ -54,7 +54,8 @@ switch ($op) {
 
 			if ($edituser->getVar('uid') != icms::$user->getVar('uid')) {
 				if ($pass != '') {
-					$pass = icms_core_Password::encryptPass($pass);
+                    $icmspass = new icms_core_Password();
+					$pass = $icmspass->encryptPass($pass);
 					$edituser->setVar('pass', $pass);
 					$edituser->setVar('pass_expired', 0);
 				}
