@@ -22,11 +22,11 @@ $modversion = array(
 	'name'						=> _MI_PROFILE_NAME,
 	'version'					=> 2.1,
 	'description'				=> _MI_PROFILE_DESC,
-	'author'					=> "phoenyx, Jan Pedersen, Marcello Brandao, Sina Asghari, Gustavo Pilla.",
+	'author'					=> "m0nty, phoenyx, Jan Pedersen, Marcello Brandao, Sina Asghari, Gustavo Pilla.",
 	'credits'					=> "The XOOPS Project, The ImpressCMS Project, The SmartFactory, Ackbarr, Komeia, vaughan, alfred.",
 	'help'						=> "",
 	'license'					=> "GNU General Public License (GPL)",
-	'official'					=> 0,
+	'official'					=> 1,
 	'dirname'					=> basename(dirname(__FILE__)),
 	'modname'					=> 'profile',
 
@@ -36,9 +36,9 @@ $modversion = array(
 	'image'						=> "images/icon_big.png", /* for backward compatibility */
 
 /**  Development information */
-	'status_version'			=> "Beta",
-	'status'					=> "Beta",
-	'date'						=> "July 2012",
+	'status_version'			=> "Final",
+	'status'					=> "Final",
+	'date'						=> "1 Okt 2012",
 	'author_word'				=> "",
 	'warning'					=> _CO_ICMS_WARNING_FINAL,
 
@@ -82,9 +82,9 @@ $modversion['people']['developers'][] = "[url=http://community.impresscms.org/us
 $modversion['people']['developers'][] = "[url=http://community.impresscms.org/userinfo.php?uid=1168]phoenyx[/url]";
 $modversion['people']['testers'][] = "[url=http://community.impresscms.org/userinfo.php?uid=53]davidl2[/url]";
 $modversion['people']['testers'][] = "[url=http://community.impresscms.org/userinfo.php?uid=10]sato-san[/url]";
+$modversion['people']['testers'][] = "[url=http://community.impresscms.org/userinfo.php?uid=10]fiammybe[/url]";
 $modversion['people']['translators'][] = "[url=http://community.impresscms.org/userinfo.php?uid=10]sato-san[/url]";
 $modversion['people']['translators'][] = "[url=http://community.impresscms.org/userinfo.php?uid=1168]phoenyx[/url]";
-$modversion['people']['documenters'][] = "[url=http://community.impresscms.org/userinfo.php?uid=372]UnderDog[/url]";
 //$modversion['people']['other'][] = "";
 
 /** Manual */

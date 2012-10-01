@@ -1,7 +1,7 @@
 Profile Changelog
 
-=== Profile 2.1 Beta ===
-Release date: July 2012
+=== Profile 2.1 Final ===
+Release date: 1 Okt 2012
 Revision: 
 
 '''Improved'''
