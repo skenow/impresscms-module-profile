@@ -15,9 +15,7 @@
 
 define("_MI_PROFILE_NUMBPICT_TITLE", "Number of pictures");
 define("_MI_PROFILE_NUMBPICT_DESC", "Number of pictures a user can have in their album. '0' to deactivate check (not recommended).");
-define("_AM_PROFILE_REGSTEPS", "Registration steps");
-define("_AM_PROFILE_CATEGORYS", "Categories");
-define("_AM_PROFILE_FIELDS", "Fields");
+
 define("_MI_PROFILE_THUMW_TITLE" , "Thumb width");
 define("_MI_PROFILE_THUMBW_DESC" , "Thumbnails width in pixels<br />This means your picture thumbnail will be<br />most of this size in width<br />All proportions are maintained");
 define("_MI_PROFILE_THUMBH_TITLE" , "Thumb Height");
@@ -104,8 +102,7 @@ define("_MI_PROFILE_EDITACCOUNT", "Edit account");
 define("_MI_PROFILE_CHANGEPASS", "Change password");
 define("_MI_PROFILE_CHANGEMAIL", "Change email");
 define("_MI_PROFILE_DELETEACCOUNT", "Delete account");
-define("_MI_PROFILE_USERS", "Users");
-define("_MI_PROFILE_PERMISSIONS", "Permissions");
+
 define("_MI_PROFILE_FINDUSER", "Find users");
 
 //Configuration categories
@@ -133,7 +130,6 @@ define("_MI_PROFILE_GROUP_VIEW_DSC", "Annonymous users are showing up in this li
 define("_MI_PROFILE_PROFILE_SOCIAL", "Social profile manager");
 define("_MI_PROFILE_PROFILE_SOCIAL_DESC", "Do you want to use this module as a social profile?");
 
-define("_MI_PROFILE_VISIBILITY", "Visibility");
 define("_MI_PROFILE_AUDIOS", "Audios");
 define("_MI_PROFILE_TRIBES", "Groups");
 define("_MI_PROFILE_PICTURES", "Pictures");
