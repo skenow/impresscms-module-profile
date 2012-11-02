@@ -194,6 +194,9 @@ class mod_profile_Field extends icms_ipf_Object {
 		switch ($this->getVar('field_type')) {
 			case "textarea":
 			case "dhtml":
+				if($this->getVar("field_name") == "user_sig") {
+					$value = $user->getVar("user_sig", "N");
+				}
 		  		return icms_core_DataFilter::undoHtmlSpecialChars(str_replace('&amp;', '&', $value), 1);
 				break;
 			case "select":
