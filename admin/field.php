@@ -96,7 +96,7 @@ if (in_array($clean_op, $valid_op, true)){
 			$objectTable->addQuickSearch(array('field_name', 'field_title', 'field_description'));
 			$objectTable->addCustomAction('getDeleteButtonForDisplay');
 			$objectTable->addActionButton('changedField', false, _SUBMIT);
-
+			$objectTable->addFilter("step_id", "filterSteps");
 			$icmsAdminTpl->assign('profile_field_table', $objectTable->fetch());
 			$icmsAdminTpl->display('db:profile_admin_field.html');
 			break;
