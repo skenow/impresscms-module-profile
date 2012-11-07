@@ -180,7 +180,6 @@
   <{/if}>
   <{if $allow_friendship}>
   <div id="profile-profile-friends" class="outer">
-  <div class="confirmMsg">
     <h3 class="head">
       <a href="friendship.php?uid=<{$uid_owner}>"><img src="images/friends.gif" alt="<{$lang_friends_goto}>" /><{$lang_friends}></a>
     </h3>
@@ -194,6 +193,7 @@
     </tr></table>
     <{/if}>
     <{if $friends_pending|@count > 0}>
+    <div class="confirmMsg">
     <h3 class="head"><{$lang_friends_pending}></h3>
     <ul>
       <{section name=i loop=$friends_pending}>
@@ -216,8 +216,8 @@
       </li>
       <{/section}>
     </ul>
+    </div>
     <{/if}>
-  </div>
   </div>
   <{/if}>
   <{if $allow_audio}>
