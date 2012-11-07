@@ -13,7 +13,7 @@
  * @author			Gustavo Pilla (aka nekro) <nekro@impresscms.org>
  * @version         $Id$
  */
-
+icms_loadLanguageFile("profile", "common");
 $adminmenu[] = array(
 	'title'	=> _MI_PROFILE_USERS,
 	'link'	=> 'admin/user.php',

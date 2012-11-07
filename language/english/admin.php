@@ -144,11 +144,3 @@ define("_AM_SPROFILE_UNAME", "Display name");
 define("_AM_SPROFILE_UID", "Userid");
 define("_AM_SPROFILE_EMAIL", "Email");
 define("_AM_SPROFILE_EXPORT_ALL", "Export all matching users");
-
-// moved here from modinfo - 2.2
-define("_MI_PROFILE_USERS", "Users");
-define("_AM_PROFILE_CATEGORYS", "Categories");
-define("_AM_PROFILE_FIELDS", "Fields");
-define("_AM_PROFILE_REGSTEPS", "Registration steps");
-define("_MI_PROFILE_VISIBILITY", "Visibility");
-define("_MI_PROFILE_PERMISSIONS", "Permissions");

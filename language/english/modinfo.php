@@ -37,7 +37,6 @@ define("_MI_PROFILE_PICTURESPERPAGE_DESC", "Pictures showing per page before pag
 define("_MI_PROFILE_VIDEOSPERPAGE_TITLE", "Videos per Page");
 define("_MI_PROFILE_DELETEPHYSICAL_TITLE", "Delete uploaded files");
 define("_MI_PROFILE_DELETEPHYSICAL_DESC", "If set to 'yes', direct links to this file will be broken as well. Configure with care!");
-define("_MI_PROFILE_MODULEDESC", "This module simulates a social network software like MySpace or Orkut, please login or register now.");
 define("_MI_PROFILE_TUBEW_TITLE", "Width of the YouTube videos");
 define("_MI_PROFILE_TUBEW_DESC", "The width in pixels of the YouTube video player");
 define("_MI_PROFILE_TUBEH_TITLE", "Height of the YouTube videos");
