@@ -67,6 +67,8 @@ class mod_profile_Field extends icms_ipf_Object {
 	 * @return icms_form_Element
 	 */
 	public function getEditElement($user, $profile) {
+		global $icmsConfigAuth;
+
 		$value = in_array($this->getVar('field_name'), $this->getUserVars()) ? $user->getVar($this->getVar('field_name'), 'e') : $profile->getVar($this->getVar('field_name'), 'e');
 		if ($value === null) $value = $this->getVar('field_default');
 		$caption = $this->getVar('field_title');
@@ -166,7 +168,7 @@ class mod_profile_Field extends icms_ipf_Object {
 				}
 				break;
 			case "openid":
-				if ($icmsConfigAuth['auth_openid'] != 1) break;
+				if ($icmsConfigAuth['auth_openid'] != 1) {$element = NULL; break;}
 				$element = new icms_form_elements_Text($caption, $name, 35, $this->getVar('field_maxlength'), $value);
 				break;
 			case "textbox":
