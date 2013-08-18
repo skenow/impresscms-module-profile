@@ -18,7 +18,7 @@
 defined("ICMS_ROOT_PATH") or die("ICMS root path not defined");
 
 $modversion = array(
-/**  General Information  */
+	/**  General Information  */
 	'name'						=> _MI_PROFILE_NAME,
 	'version'					=> 2.2,
 	'description'				=> _MI_PROFILE_DESC,
@@ -30,46 +30,46 @@ $modversion = array(
 	'dirname'					=> basename(dirname(__FILE__)),
 	'modname'					=> 'profile',
 
-/**  Images information  */
+	/**  Images information  */
 	'iconsmall'					=> "images/icon_small.png",
 	'iconbig'					=> "images/icon_big.png",
 	'image'						=> "images/icon_big.png", /* for backward compatibility */
 
-/**  Development information */
+	/**  Development information */
 	'status_version'			=> "RC",
 	'status'					=> "RC",
 	'date'						=> "15 Aug 2013",
 	'author_word'				=> "",
 	'warning'					=> _CO_ICMS_WARNING_RC,
 
-/** Contributors */
+	/** Contributors */
 	'developer_website_url'		=> "http://www.impresscms.org",
 	'developer_website_name'	=> "The ImpressCMS Project",
 	'developer_email'			=> "contact@impresscms.org",
 
-/** Administrative information */
+	/** Administrative information */
 	'hasAdmin'					=> 1,
 	'adminindex'				=> "admin/user.php",
 	'adminmenu'					=> "admin/menu.php",
 
-/** Install and update informations */
+	/** Install and update informations */
 	'onInstall'					=> "include/onupdate.inc.php",
 	'onUpdate'					=> "include/onupdate.inc.php",
 
-/** Search information */
+	/** Search information */
 	'hasSearch'					=> 1,
 	'search'					=> array('file' => "include/search.inc.php", 'func' => "profile_search"),
 
-/** Comments */
+	/** Comments */
 	'hasComments'				=> 1,
 	'comments'					=> array('itemName' => 'uid', 'pageName' => 'index.php'),
 
-/** Menu information */
+	/** Menu information */
 	'hasMain'					=> 1,
 
-/** IPF object information */
+	/** IPF object information */
 	'object_items'				=> array('audio', 'category', 'configs', 'field', 'friendship', 'pictures', 'profile', 'regstep',
-								         'tribepost', 'tribes', 'tribetopic', 'tribeuser', 'videos', 'visibility', 'visitors'));
+		'tribepost', 'tribes', 'tribetopic', 'tribeuser', 'videos', 'visibility', 'visitors'));
 
 $modversion['tables'] = icms_getTablesArray($modversion['dirname'], $modversion['object_items']);
 
@@ -126,7 +126,7 @@ if (is_object(icms::$module) && icms::$module->getVar('dirname') == $modversion[
 $modversion['blocks'][1] = array(
 	'file'        => 'blocks.php',
 	'name'        => _MI_PROFILE_BLOCKS_FRIENDS,
-    'description' => '', 
+	'description' => '',
 	'show_func'   => 'b_profile_friends_show',
 	'edit_func'   => 'b_profile_friends_edit',
 	'options'     => '5',
@@ -135,7 +135,7 @@ $modversion['blocks'][1] = array(
 $modversion['blocks'][] = array(
 	'file'        => 'blocks.php',
 	'name'        => _MI_PROFILE_BLOCKS_USERMENU,
-    'description' => '', 
+	'description' => '',
 	'show_func'   => 'b_profile_usermenu_show',
 	'template'    => 'profile_block_usermenu.html');
 
@@ -227,8 +227,8 @@ $modversion['config'][] = array(
 	'default'		=> 'nick',
 	'category'		=> 'settings',
 	'options'		=> array(_US_NICKNAME		=> 'nick',
-							 _US_REALNAME		=> 'real',
-							 _MI_PROFILE_BOTH	=> 'both'));
+		_US_REALNAME		=> 'real',
+		_MI_PROFILE_BOTH	=> 'both'));
 
 $group_list = icms::handler('icms_member')->getGroupList(new icms_db_criteria_Compo(new icms_db_criteria_Item('groupid', ICMS_GROUP_ADMIN, '!=')));
 foreach (array_keys($group_list) as $groupid)
@@ -485,7 +485,7 @@ $modversion['notification']['event'][] = array(
 $modversion['notification']['event'][] = array(
 	'name'				=> 'comment',
 	'category'			=> 'pictures',
-    'invisible'         => true);
+	'invisible'         => true);
 
 $modversion['notification']['category'][] = array(
 	'name'				=> 'videos',
@@ -507,7 +507,7 @@ $modversion['notification']['event'][] = array(
 $modversion['notification']['event'][] = array(
 	'name'				=> 'comment',
 	'category'			=> 'videos',
-    'invisible'         => true);
+	'invisible'         => true);
 
 $modversion['notification']['category'][] = array(
 	'name'				=> 'audio',
@@ -529,7 +529,7 @@ $modversion['notification']['event'][] = array(
 $modversion['notification']['event'][] = array(
 	'name'				=> 'comment',
 	'category'			=> 'audio',
-    'invisible'         => true);
+	'invisible'         => true);
 
 $modversion['notification']['category'][] = array(
 	'name'				=> 'tribetopic',
