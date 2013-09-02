@@ -36,11 +36,11 @@ $modversion = array(
 	'image'						=> "images/icon_big.png", /* for backward compatibility */
 
 /**  Development information */
-	'status_version'			=> "RC",
-	'status'					=> "RC",
-	'date'						=> "15 Aug 2013",
+	'status_version'			=> "Final",
+	'status'					=> "Final",
+	'date'						=> "02 Sept 2013",
 	'author_word'				=> "",
-	'warning'					=> _CO_ICMS_WARNING_RC,
+	'warning'					=> _CO_ICMS_WARNING_FINAL,
 
 /** Contributors */
 	'developer_website_url'		=> "http://www.impresscms.org",
