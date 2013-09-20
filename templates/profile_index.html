@@ -18,9 +18,13 @@
   <{if $user_name_header}>
   <div id="profile-profile-visual" class="outer">
     <h3 class="profile-profile-title head">
-      <{if $isOwner || $isAdmin}><a href="configs.php?uid=<{$uid_owner}>"><img class="profile-nav-bar-icon" src="images/configs.gif" alt="" /></a><{/if}>
-      <{if !$isAnonym && !$isOwner}><a href="<{$icms_url}>/pmlite.php?send2=1&amp;to_userid=<{$uid_owner}>" class="profile-pm"></a><{/if}>
-      <{$user_name_header}>
+		<{$user_name_header}>
+		<{if $isOwner || $isAdmin}>
+			<a href="configs.php?uid=<{$uid_owner}>" title="Update your settings"><img class="profile-nav-bar-icon" src="images/configs.gif" alt="_PREFERENCES" /></a>
+			<a href="edituser.php?uid=<{$uid_owner}>" title="Edit your profile"><img class="profile-nav-bar-icon" src="images/avatar.gif" alt="_US_EDITPROFILE" /></a>
+			<a href="changepass.php?uid=<{$uid_owner}>" title="Change your password"><img class="profile-nav-bar-icon" src="images/lock.gif" alt="_US_CHANGE_PASSWORD" /></a>
+		<{/if}>
+		<{if !$isAnonym && !$isOwner}><a href="<{$icms_url}>/pmlite.php?send2=1&amp;to_userid=<{$uid_owner}>" class="profile-pm"></a><{/if}>
     </h3>
     <{if $allow_pictures}>
     <div id="profile-profile-avatar">
