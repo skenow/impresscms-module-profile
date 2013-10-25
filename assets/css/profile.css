@@ -15,7 +15,7 @@ div#profile-profile-visitors, div#profile-profile-search-results, div#profile-pr
 div#profile-profile-tribes, div#profile-profile-friends, div#profile-profile-pictures, div#profile-profile-audio, div#profile-profile-videos {margin:3px 0;margin-left:-2px;padding:1px;overflow:hidden;text-align:center;width:100%;}
 div#profile-profile-tribes h3, div#profile-profile-friends h3, div#profile-profile-pictures h3, div#profile-profile-audio h3, div#profile-profile-videos h3 {text-align:left;}
 div#profile-profile-tribes ul, div#profile-profile-friends ul {margin-left: 30px;}
-div#profile-profile-tribes ul input.image, div#profile-profile-friends ul input.image {width:12px;height:12px;}
+div#profile-profile-tribes ul input.image, div#profile-profile-friends ul input.image {}
 td.profile-profile-picture, td.profile-profile-friend {vertical-align:middle;border-bottom:none;}
 div#profile-profile-avatar {margin-top:5px;margin-bottom:5px;width:100%;text-align:center;}
 div h3.head a img {padding-right:7px;}
