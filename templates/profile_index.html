@@ -14,18 +14,18 @@
 <{/if}>
 <{/if}>
 <{if $user_name_header || $isOwner || $allow_profile_general || $allow_profile_contact || $allow_profile_stats || ($allow_profile_usercontributions && $modules|count > 0)}>
-<div class="profile-profile-group1">
+<div style="width:100%;" class="profile-generell-info">
   <{if $user_name_header}>
   <div id="profile-profile-visual" class="outer">
-    <h3 class="profile-profile-title head">
-		<{$user_name_header}>
-		<{if $isOwner || $isAdmin}>
-			<a href="configs.php?uid=<{$uid_owner}>" title="Update your settings"><img class="profile-nav-bar-icon" src="images/configs.gif" alt="_PREFERENCES" /></a>
-			<a href="edituser.php?uid=<{$uid_owner}>" title="Edit your profile"><img class="profile-nav-bar-icon" src="images/avatar.gif" alt="_US_EDITPROFILE" /></a>
-			<a href="changepass.php?uid=<{$uid_owner}>" title="Change your password"><img class="profile-nav-bar-icon" src="images/lock.gif" alt="_US_CHANGE_PASSWORD" /></a>
-		<{/if}>
-		<{if !$isAnonym && !$isOwner}><a href="<{$icms_url}>/pmlite.php?send2=1&amp;to_userid=<{$uid_owner}>" class="profile-pm"></a><{/if}>
-    </h3>
+    <h4 class="profile-profile-title head">
+      <{if $isOwner || $isAdmin}><a href="configs.php?uid=<{$uid_owner}>"><img class="profile-nav-bar-icon" src="images/configs.gif" alt="" /></a><{/if}>
+      <{if !$isAnonym && !$isOwner}>
+	<a class="cboxElement" href="<{$icms_url}>/pmlite.php?send2=1&amp;to_userid=<{$uid_owner}>">
+	  <input type="button" class="formButton" value="<{$smarty.const._CO_PROFILE_SEND_PM_TO}>" />
+	</a>
+      <{/if}>
+      <{$user_name_header}>
+    </h4>
     <{if $allow_pictures}>
     <div id="profile-profile-avatar">
       <{if $user_avatar}>
@@ -52,7 +52,7 @@
   <{/if}>
   <{if $isOwner}>
   <div id="profile-profile-visitors" class="outer">
-    <h3 class="head"><{$lang_visitors}></h3>
+    <h4 class="head"><{$lang_visitors}></h4>
     <{if $visitors}>
     <{cycle values='even,odd' print=false reset=true advance=false}>
     <{section name=i loop=$visitors}>
@@ -64,7 +64,7 @@
   <{foreach item=category from=$fields}>
   <div class="profile-profile-details outer">
     <{cycle values='even,odd' print=false reset=true advance=false}>
-    <h3 class="profile-profiletitle head"><{$category.title}></h3>
+    <h4 class="profile-profiletitle head"><{$category.title}></h4>
     <{foreach item=field from=$category.fields}>
     <p class="<{cycle values='even,odd'}>"><{$field.image}><span class="profile-profileinfo-label"><{$field.title}>:</span><span class="profile-profileinfo-value"><{$field.value}></span></p>
     <{/foreach}>
@@ -72,13 +72,13 @@
   <{/foreach}>
   <{if $allow_profile_usercontributions && $modules|count > 0}>
   <div id="profile-profile-search-results" class="outer">
-    <h3 class="profile-profiletitle head"><{$lang_usercontributions}></h3>
+    <h4 class="profile-profiletitle head"><{$lang_usercontributions}></h4>
     <{foreach item=module from=$modules name="search_results"}>
     <div class="profile-profile-search-module" id="profile-profile-search-module-<{$smarty.foreach.search_results.iteration}>" >
       <h4 class="profile-profiletitle head">
         <a style="cursor: pointer;" class="profile-profile-search-module-title" id="profile-profile-search-module-title-<{$smarty.foreach.search_results.iteration}>" onclick ="$('#profile-profile-search-module-results-<{$smarty.foreach.search_results.iteration}>').toggle(400);"><img src="images/toggle.png" alt="" /></a> 
-		<a style="cursor: pointer;" class="profile-profile-search-module-title" id="profile-profile-search-module-title-<{$smarty.foreach.search_results.iteration}>" onclick ="$('#profile-profile-search-module-results-<{$smarty.foreach.search_results.iteration}>').toggle(400);"><{$module.name}></a>
-	  </h4>
+	<a style="cursor: pointer;" class="profile-profile-search-module-title" id="profile-profile-search-module-title-<{$smarty.foreach.search_results.iteration}>" onclick ="$('#profile-profile-search-module-results-<{$smarty.foreach.search_results.iteration}>').toggle(400);"><{$module.name}></a>
+      </h4>
       <div class="profile-profile-search-module-results" id="profile-profile-search-module-results-<{$smarty.foreach.search_results.iteration}>" style="display: none">
         <{cycle values='even,odd' print=false reset=true advance=false}>
         <{foreach item=result from=$module.results}>
@@ -97,12 +97,12 @@
 </div>
 <{/if}>
 <{if $allow_pictures || $allow_audio || $allow_videos || $allow_friendship || $allow_tribes}>
-<div class="profile-profile-group2">
+<div style="width:100%;clear:both;float:left;" class="profile-social-info">
   <{if $allow_pictures}>
-  <div id="profile-profile-pictures" class="outer">
-    <h3 class="profile-profiletitle head">
+  <div style="margin: 3px 0 3px 0;" id="profile-profile-pictures" class="outer">
+    <h4 class="profile-profiletitle head">
       <a href="pictures.php?uid=<{$uid_owner}>"><img src="images/pictures.gif" alt="<{$lang_pictures_goto}>" /><{$lang_photos}></a>
-    </h3>
+    </h4>
     <{if $pictures|@count > 0}>
     <{cycle values='even,odd' print=false reset=true advance=false}>
     <table cellspacing="1" cellpadding="0"><tr>
@@ -117,10 +117,10 @@
   </div>
   <{/if}>
   <{if $allow_tribes}>
-  <div id="profile-profile-tribes" class="outer">
-    <h3 class="head">
+  <div style="margin: 3px 0 3px 0;" id="profile-profile-tribes" class="outer">
+    <h4 class="head">
       <a href="tribes.php?uid=<{$uid_owner}>"><img src="images/tribes.gif" alt="<{$lang_tribes_goto}>" /><{$lang_tribes}></a>
-    </h3>
+    </h4>
     <{if $tribes|@count > 0}>
     <ul>
       <{section name=i loop=$tribes}>
@@ -129,7 +129,7 @@
     </ul>
     <{/if}>
     <{if $tribes_approvals|@count > 0}>
-    <h3 class="head"><{$lang_approvals}></h3>
+    <h4 class="head"><{$lang_approvals}></h4>
     <ul>
       <{section name=i loop=$tribes_approvals}>
       <li>
@@ -155,7 +155,7 @@
     </ul>
     <{/if}>
     <{if $tribes_invitations|@count > 0}>
-    <h3 class="head"><{$lang_invitations}></h3>
+    <h4 class="head"><{$lang_invitations}></h4>
     <ul>
       <{section name=i loop=$tribes_invitations}>
       <li>
@@ -183,10 +183,10 @@
   </div>
   <{/if}>
   <{if $allow_friendship}>
-  <div id="profile-profile-friends" class="outer">
-    <h3 class="head">
+  <div style="margin: 3px 0 3px 0;" id="profile-profile-friends" class="outer">
+    <h4 class="head">
       <a href="friendship.php?uid=<{$uid_owner}>"><img src="images/friends.gif" alt="<{$lang_friends_goto}>" /><{$lang_friends}></a>
-    </h3>
+    </h4>
     <{if $friends|@count > 0}>
     <{cycle values='even,odd' print=false reset=true advance=false}>
     <table cellspacing="1" cellpadding="0"><tr>
@@ -197,8 +197,8 @@
     </tr></table>
     <{/if}>
     <{if $friends_pending|@count > 0}>
-    <div class="confirmMsg">
-    <h3><{$lang_friends_pending}></h3>
+<div class="confirmMsg">
+    <h4 class="head"><{$lang_friends_pending}></h4>
     <ul>
       <{section name=i loop=$friends_pending}>
       <li>
@@ -220,15 +220,15 @@
       </li>
       <{/section}>
     </ul>
-    </div>
+</div>
     <{/if}>
   </div>
   <{/if}>
   <{if $allow_audio}>
-  <div id="profile-profile-audio" class="outer">
-    <h3 class="head">
+  <div style="margin: 3px 0 3px 0;" id="profile-profile-audio" class="outer">
+    <h4 class="head">
       <a href="audio.php?uid=<{$uid_owner}>"><img src="images/audio.gif" alt="<{$lang_audio_goto}>" /><{$lang_audio}></a>
-    </h3>
+    </h4>
     <{if $audio}>
     <div class="profile-profile-audio even">
       <{$audio.content}>
@@ -237,10 +237,10 @@
   </div>
   <{/if}>
   <{if $allow_videos}>
-  <div id="profile-profile-videos" class="outer">
-    <h3 class="head">
+  <div style="margin: 3px 0 3px 0;" id="profile-profile-videos" class="outer">
+    <h4 class="head">
       <a href="videos.php?uid=<{$uid_owner}>"><img src="images/video.gif" alt="<{$lang_video_goto}>" /><{$lang_videos}></a>
-    </h3>
+    </h4>
     <div id="profile-profile-video">
     <{if $video}>
     <div class="profile-profile-video even">
