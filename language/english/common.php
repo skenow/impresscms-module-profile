@@ -239,4 +239,9 @@ define("_AM_PROFILE_REGSTEPS", "Registration steps");
 define("_MI_PROFILE_VISIBILITY", "Visibility");
 define("_MI_PROFILE_PERMISSIONS", "Permissions");
 define("_MI_PROFILE_MODULEDESC", "This module simulates a social network software like MySpace or Orkut, please login or register now.");
+
+// Added in version 2.3
+define("_CO_PROFILE_SEND_PM_TO", "Private message to");
+define("_CO_PROFILE_CONFIG_SETTING_ADMIN", "Setup suspending time");
+define("_CO_PROFILE_CONFIG_SETTING_USER", "Setup your privacy");
 ?>

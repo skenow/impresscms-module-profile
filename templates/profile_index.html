@@ -18,13 +18,15 @@
   <{if $user_name_header}>
   <div id="profile-profile-visual" class="outer">
     <h4 class="profile-profile-title head">
-      <{if $isOwner || $isAdmin}><a href="configs.php?uid=<{$uid_owner}>"><img class="profile-nav-bar-icon" src="images/configs.gif" alt="" /></a><{/if}>
+      <{if $isOwner}><a href="configs.php?uid=<{$uid_owner}>"><img class="profile-nav-bar-icon" src="images/configs.gif" alt="" /></a><{$smarty.const._CO_PROFILE_CONFIG_SETTING_USER}>
+      <{elseif $isAdmin}>
+      <{if $isAdmin}><a href="configs.php?uid=<{$uid_owner}>"><img class="profile-nav-bar-icon" src="images/configs.gif" alt="" /></a><{$smarty.const._CO_PROFILE_CONFIG_SETTING_ADMIN}><{/if}>
+      <{/if}>
       <{if !$isAnonym && !$isOwner}>
 	<a class="cboxElement" href="<{$icms_url}>/pmlite.php?send2=1&amp;to_userid=<{$uid_owner}>">
-	  <input type="button" class="formButton" value="<{$smarty.const._CO_PROFILE_SEND_PM_TO}>" />
+	  <input type="button" class="formButton" value="<{$smarty.const._CO_PROFILE_SEND_PM_TO}>: <{$user_name_header}>" />
 	</a>
       <{/if}>
-      <{$user_name_header}>
     </h4>
     <{if $allow_pictures}>
     <div id="profile-profile-avatar">

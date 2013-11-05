@@ -9,6 +9,7 @@ div.clear {clear:both;}
 div.pagination {text-align:right;}
 form.profile-quickform {display:inline;}
 h2 a img {vertical-align:middle;}
+.profile-nav-bar-icon{vertical-align: middle;}
 
 /** Profile *****************************************************************/
 div#profile-profile-visitors, div#profile-profile-search-results, div#profile-profile-visual, div#profile-profile-statistics, div.profile-profile-details {margin:3px 0px 3px;float:left;padding:1px;width:100%;overflow:hidden;}
