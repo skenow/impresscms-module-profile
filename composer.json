@@ -41,7 +41,7 @@
     },
     "require":
         {
-            "impresscms/module-installer-plugin": "*"
+            "impresscms/composer-module-installer-plugin": "*"
         }
 
 }
