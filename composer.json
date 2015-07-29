@@ -1,0 +1,47 @@
+{
+    "name": "impresscms/impresscms-module-profile",
+    "description": "ImpressCMS Profile Core Module",
+    "type": "impresscms-module",
+    "minimum-stability": "stable",
+    "license": "GPL-2.0",
+    "authors": [
+        {
+            "name": "m0nty"
+        },
+        {
+            "name": "phoenyx"
+        },
+        {
+            "name": "Jan Pedersen"
+        },
+        {
+            "name": "Marcello Brandao"
+        },
+        {
+            "name": "Sina Asghari"
+        },
+        {
+            "name": "Gustavo Pilla"
+        },
+        {
+            "name": "skenow",
+            "email": "skenow@impresscms.org"
+        },
+        {
+            "name": "QM-B",
+            "email": "st.floher@gmail.com"
+        },
+        {
+            "name": "David Janssens",
+            "email": "david.j@impresscms.org"
+        }
+    ],
+    "support": {
+        "issues": "https://www.assembla.com/spaces/icms-mod-profile/tickets"
+    },
+    "require":
+        {
+            "impresscms/module-installer-plugin": "*"
+        }
+
+}
