@@ -1,5 +1,11 @@
 Profile Changelog
 
+=== Profile 2.2.1 ===
+Release date: 10 Oct 2018
+
+'''Improved'''
+* module now is compatible with varchar-type datatype of the module version 
+
 === Profile 2.2 Final ===
 Release date: 15 Sep 2013
 Revision: 
