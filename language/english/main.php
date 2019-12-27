@@ -228,4 +228,3 @@ define("_MD_PROFILE_FRIENDS", "Friends");
 define("_MD_PROFILE_TRIBES", "Groups");
 define("_MD_PROFILE_UPLOADLIMIT", "You have already reached your upload limit of %s file(s).");
 define("_MD_PROFILE_SITEDEFAULT", "Site default");
-?>

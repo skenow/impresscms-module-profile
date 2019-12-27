@@ -83,4 +83,3 @@ class mod_profile_VisitorsHandler extends icms_ipf_Handler {
 		}
 	}
 }
-?>

@@ -47,4 +47,3 @@ function profile_iteminfo($category, $item_id) {
 
 	return $item;
 }
-?>

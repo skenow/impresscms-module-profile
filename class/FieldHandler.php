@@ -59,8 +59,8 @@ class mod_profile_FieldHandler extends icms_ipf_Handler {
 			$first_category = true;
 			for ($j = 0; $j < count($fields); $j++) {
 				$value = $fields[$j]->getOutputValue($thisUser, $profile);
-				if ($fields[$j]->getVar('field_show') && $fields[$j]->getVar('catid') == $categories[$i]->getVar('catid') && ($module->config['show_empty'] || trim($value) || $value == '0')) {;
-					if ($first_category) $rtn[$i]['title'] = $categories[$i]->getVar('cat_title');
+				if ($fields[$j]->getVar('field_show') && $fields[$j]->getVar('catid') == $categories[$i]->getVar('catid') && ($module->config['show_empty'] || trim($value) || $value == '0')) {
+                    if ($first_category) $rtn[$i]['title'] = $categories[$i]->getVar('cat_title');
 					$first_category = false;
 					$rtn[$i]['fields'][$j]['image'] = $fields[$j]->getImage();
 					$rtn[$i]['fields'][$j]['title'] = $fields[$j]->getVar('field_title');
@@ -296,4 +296,3 @@ class mod_profile_FieldHandler extends icms_ipf_Handler {
 		return true;
 	}
 }
-?>

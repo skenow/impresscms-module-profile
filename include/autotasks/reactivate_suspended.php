@@ -39,4 +39,3 @@ foreach ($configs as $config) {
 	$config->setVar('status', 0);
 	$profile_configs_handler->insert($config, true);
 }
-?>

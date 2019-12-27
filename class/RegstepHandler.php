@@ -63,4 +63,3 @@ class mod_profile_RegstepHandler extends icms_ipf_Handler {
 		return array_merge(array(0 => '---'), $this->getList());
 	}
 }
-?>

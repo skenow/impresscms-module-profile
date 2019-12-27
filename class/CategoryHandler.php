@@ -38,4 +38,3 @@ class mod_profile_CategoryHandler extends icms_ipf_Handler {
 		return false;
 	}
 }
-?>

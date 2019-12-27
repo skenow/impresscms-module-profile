@@ -23,4 +23,3 @@ icms_loadLanguageFile(basename(dirname(dirname(__FILE__))), 'common');
 
 // Find if the user is admin of the module and make this info available throughout the module
 $profile_isAdmin = icms_userIsAdmin(PROFILE_DIRNAME);
-?>

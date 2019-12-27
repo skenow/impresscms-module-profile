@@ -255,8 +255,8 @@ if (in_array($clean_op,$valid_op,true)){
 					$start = '';
 					if ($tribetopicObj->getVar('replies') + 1 > icms::$module->config['tribepostsperpage'])
 						$start = '&amp;start='.(($tribetopicObj->getVar('replies') + 1) - (($tribetopicObj->getVar('replies') + 1) % icms::$module->config['tribepostsperpage']));
-					$redirect_page = $tribetopicObj->handler->_moduleUrl.'tribes.php?tribes_id='.$tribetopicObj->getVar('tribes_id').'&amp;topic_id='.$tribetopicObj->getVar('topic_id').$start.'#post'.$tribetopicObj->getVar("last_post_id");;
-				} else {
+					$redirect_page = $tribetopicObj->handler->_moduleUrl.'tribes.php?tribes_id='.$tribetopicObj->getVar('tribes_id').'&amp;topic_id='.$tribetopicObj->getVar('topic_id').$start.'#post'.$tribetopicObj->getVar("last_post_id");
+                } else {
 					$redirect_page = $tribetopicObj->handler->_moduleUrl.'tribes.php?tribes_id='.$clean_tribes_id;
 				}
 			} else {

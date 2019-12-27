@@ -79,4 +79,3 @@ class mod_profile_Configs extends icms_ipf_Object {
 		return $this->getVar('config_uid', 'e') == icms::$user->getVar('uid');
 	}
 }
-?>

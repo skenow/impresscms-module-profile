@@ -204,4 +204,3 @@ class mod_profile_ConfigsHandler extends icms_ipf_Handler {
 		return true;
 	}
 }
-?>

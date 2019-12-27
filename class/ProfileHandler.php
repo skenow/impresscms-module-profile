@@ -146,4 +146,3 @@ class mod_profile_ProfileHandler extends icms_ipf_Handler {
 		return array($users, $profiles, $count);
 	}
 }
-?>
