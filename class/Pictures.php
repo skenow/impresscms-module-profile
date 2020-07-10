@@ -107,4 +107,3 @@ class mod_profile_Pictures extends icms_ipf_Object {
 		return $ret;
 	}
 }
-?>

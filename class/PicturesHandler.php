@@ -253,4 +253,3 @@ class mod_profile_PicturesHandler extends icms_ipf_Handler {
 		return true;
 	}
 }
-?>

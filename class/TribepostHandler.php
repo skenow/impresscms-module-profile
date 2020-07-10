@@ -179,4 +179,3 @@ class mod_profile_TribepostHandler extends icms_ipf_Handler {
 		return true;
 	}
 }
-?>

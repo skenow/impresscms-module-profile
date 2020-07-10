@@ -385,4 +385,3 @@ class mod_profile_TribesHandler extends icms_ipf_Handler {
 		return true;
 	}
 }
-?>

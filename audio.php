@@ -138,4 +138,3 @@ if (in_array($clean_op,$valid_op,true)){
 $icmsTpl->assign('profile_category_path', _MD_PROFILE_AUDIOS);
 
 include_once 'footer.php';
-?>

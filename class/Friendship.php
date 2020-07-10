@@ -131,4 +131,3 @@ class mod_profile_Friendship extends icms_ipf_Object {
 		return $ret;
 	}
 }
-?>

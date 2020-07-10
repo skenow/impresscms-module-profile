@@ -182,4 +182,3 @@ function icms_module_update_profile(&$module, $oldversion = null, $dbversion = n
 function icms_module_install_profile($module) {
 	return true;
 }
-?>

@@ -20,10 +20,10 @@ defined("ICMS_ROOT_PATH") or die("ICMS root path not defined");
 $modversion = array(
 /**  General Information  */
 	'name'						=> _MI_PROFILE_NAME,
-	'version'					=> "2.2.1",
+	'version'					=> "2.3",
 	'description'				=> _MI_PROFILE_DESC,
-	'author'					=> "m0nty, phoenyx, Jan Pedersen, Marcello Brandao, Sina Asghari, Gustavo Pilla.",
-	'credits'					=> "The XOOPS Project, The ImpressCMS Project, The SmartFactory, Ackbarr, Komeia, vaughan, alfred.",
+	'author'					=> "fiammybe",
+	'credits'					=> "The XOOPS Project, The ImpressCMS Project, The SmartFactory, Ackbarr, Komeia, vaughan, alfred,m0nty, phoenyx, Jan Pedersen, Marcello Brandao, Sina Asghari, Gustavo Pilla.",
 	'help'						=> "",
 	'license'					=> "GNU General Public License (GPL)",
 	'official'					=> 1,
@@ -36,16 +36,16 @@ $modversion = array(
 	'image'						=> "images/icon_big.png", /* for backward compatibility */
 
 /**  Development information */
-	'status_version'			=> "Final",
-	'status'					=> "Final",
-	'date'						=> "10 Oct 2018",
+	'status_version'			=> "Beta",
+	'status'					=> "Beta",
+	'date'						=> "10 Jul 2020",
 	'author_word'				=> "",
-	'warning'					=> _CO_ICMS_WARNING_FINAL,
+	'warning'					=> _CO_ICMS_WARNING_BETA,
 
 /** Contributors */
 	'developer_website_url'		=> "https://www.impresscms.org",
 	'developer_website_name'	=> "The ImpressCMS Project",
-	'developer_email'			=> "contact@impresscms.org",
+	'developer_email'			=> "david.j@impresscms.org",
 
 /** Administrative information */
 	'hasAdmin'					=> 1,

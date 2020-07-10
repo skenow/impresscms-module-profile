@@ -31,4 +31,3 @@ class mod_profile_Profile extends icms_ipf_Object {
 		}
 	}
 }
-?>

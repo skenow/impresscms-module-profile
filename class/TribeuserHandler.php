@@ -154,4 +154,3 @@ class mod_profile_TribeuserHandler extends icms_ipf_Handler {
 		return true;
 	}
 }
-?>

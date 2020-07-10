@@ -11,4 +11,3 @@
  */
 
 define("_MB_PROFILE_NUMBER_FRIENDS", "Number of friends to display");
-?>

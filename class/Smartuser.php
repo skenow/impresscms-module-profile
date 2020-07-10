@@ -59,6 +59,3 @@ class ProfileSmartuserHandler extends IcmsPersistableObjectHandler {
 		return $fields_array;
 	}
 }
-
-
-?>

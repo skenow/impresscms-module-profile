@@ -42,4 +42,3 @@ class mod_profile_VisibilityHandler extends icms_ipf_Handler {
 		return array_unique($rtn);
 	}
 }
-?>

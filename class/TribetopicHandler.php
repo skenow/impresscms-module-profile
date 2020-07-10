@@ -97,4 +97,3 @@ class mod_profile_TribetopicHandler extends icms_ipf_Handler {
 		return $rtn;
 	}
 }
-?>

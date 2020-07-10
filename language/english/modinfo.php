@@ -139,4 +139,3 @@ $group_list = icms::handler('icms_member')->getGroupList();
 foreach ($group_list as $key => $group) if ($key > 1) define("_MI_PROFILE_GROUP_VIEW_".$key, $group." can view");
 unset($group_list);
 define("_MI_PROFILE_AUTOTASK_REACTIVATE_SUSPENDED_USERS", "Reactivate suspended users");
-?>

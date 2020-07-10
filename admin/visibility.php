@@ -62,4 +62,3 @@ $add_form->assign($icmsAdminTpl);
 $icmsAdminTpl->display("db:profile_admin_visibility.html");
 
 icms_cp_footer();
-?>

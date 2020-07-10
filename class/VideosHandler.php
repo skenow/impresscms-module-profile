@@ -97,4 +97,3 @@ class mod_profile_VideosHandler extends icms_ipf_Handler {
 		return true;
 	}
 }
-?>

@@ -222,4 +222,3 @@ class mod_profile_Tribes extends icms_ipf_seo_Object {
 		return $ret;
 	}
 }
-?>

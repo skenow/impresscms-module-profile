@@ -71,4 +71,3 @@ class mod_profile_Regstep extends icms_ipf_Object {
 		return $this->getVar('step_name');
 	}
 }
-?>

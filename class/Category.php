@@ -61,4 +61,3 @@ class mod_profile_Category extends icms_ipf_Object {
 		return $control->render();
 	}
 }
-?>

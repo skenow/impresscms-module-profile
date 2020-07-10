@@ -126,4 +126,3 @@ class mod_profile_FriendshipHandler extends icms_ipf_Handler {
 		return is_object(icms::$user);
 	}
 }
-?>

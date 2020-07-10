@@ -120,4 +120,3 @@ if (in_array($clean_op,$valid_op,true)){
 $icmsTpl->assign('profile_category_path', _MD_PROFILE_VIDEOS);
 
 include_once 'footer.php';
-?>

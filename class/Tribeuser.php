@@ -128,4 +128,3 @@ class mod_profile_Tribeuser extends icms_ipf_Object {
 		return $ret;
 	}
 }
-?>

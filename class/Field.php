@@ -421,4 +421,3 @@ class mod_profile_Field extends icms_ipf_Object {
 		return $control->render();
 	}
 }
-?>

@@ -129,4 +129,3 @@ class mod_profile_AudioHandler extends icms_ipf_Handler {
 		return true;
 	}
 }
-?>

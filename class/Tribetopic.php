@@ -108,4 +108,3 @@ class mod_profile_Tribetopic extends icms_ipf_seo_Object {
 		return $ret;
 	}
 }
-?>

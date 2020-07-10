@@ -29,4 +29,3 @@ class mod_profile_Visibility extends icms_ipf_Object  {
 		$this->initVar('profile_group', XOBJ_DTYPE_INT);
 	}
 }
-?>

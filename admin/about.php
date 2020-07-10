@@ -15,4 +15,3 @@ include_once 'admin_header.php';
 
 $aboutObj = new icms_ipf_About();
 $aboutObj->render();
-?>
