@@ -19,7 +19,7 @@ $profile_template = 'profile_changemail.html';
 include 'header.php';
 
 if (!isset($_POST['submit']) && !isset($_REQUEST['oldmail'])) {
-	//show change password form
+	//show change email form
 	$form = new icms_form_Theme(_MD_PROFILE_CHANGEMAIL, 'form', $_SERVER['REQUEST_URI'], 'post', true);
 	$form->addElement(new icms_form_elements_Text(_MD_PROFILE_NEWMAIL, 'newmail', 15, 50), true);
 	$form->addElement(new icms_form_elements_Button('', 'submit', _SUBMIT, 'submit'));
