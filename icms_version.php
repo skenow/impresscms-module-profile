@@ -20,14 +20,14 @@ defined("ICMS_ROOT_PATH") or die("ICMS root path not defined");
 $modversion = array(
 /**  General Information  */
 	'name'						=> _MI_PROFILE_NAME,
-	'version'					=> "2.3",
+	'version'					=> "2.4",
 	'description'				=> _MI_PROFILE_DESC,
 	'author'					=> "fiammybe",
 	'credits'					=> "The XOOPS Project, The ImpressCMS Project, The SmartFactory, Ackbarr, Komeia, vaughan, alfred,m0nty, phoenyx, Jan Pedersen, Marcello Brandao, Sina Asghari, Gustavo Pilla.",
 	'help'						=> "",
 	'license'					=> "GNU General Public License (GPL)",
 	'official'					=> 1,
-	'dirname'					=> basename(dirname(__FILE__)),
+	'dirname'					=> basename(__DIR__),
 	'modname'					=> 'profile',
 
 /**  Images information  */
@@ -36,11 +36,11 @@ $modversion = array(
 	'image'						=> "images/icon_big.png", /* for backward compatibility */
 
 /**  Development information */
-	'status_version'			=> "final",
-	'status'					=> "Final",
-	'date'						=> "16 Jul 2020",
+	'status_version'			=> "rc",
+	'status'					=> "RC",
+	'date'						=> "14 Dec 2020",
 	'author_word'				=> "",
-	'warning'					=> _CO_ICMS_WARNING_FINAL,
+	'warning'					=> _CO_ICMS_WARNING_RC,
 
 /** Contributors */
 	'developer_website_url'		=> "https://www.impresscms.org",
@@ -87,8 +87,8 @@ $modversion['people']['translators'][] = "[url=https://www.impresscms.org/userin
 $modversion['people']['translators'][] = "[url=https://www.impresscms.org/userinfo.php?uid=1168]phoenyx[/url]";
 //$modversion['people']['other'][] = "";
 
-/** Manual */
-$modversion['manual']['wiki'][] = "<a href='https://wiki.impresscms.org/index.php?title=Extended_Profile/"._LANGCODE."' target='_blank'>"._LANGNAME."</a>";
+/** No Manual yet, sorry */
+$modversion['manual']['wiki'][] = "";
 
 $i = 1;
 global $icmsConfigUser;
