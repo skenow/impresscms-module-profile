@@ -36,11 +36,11 @@ $modversion = array(
 	'image'						=> "images/icon_big.png", /* for backward compatibility */
 
 /**  Development information */
-	'status_version'			=> "rc",
-	'status'					=> "RC",
-	'date'						=> "14 Dec 2020",
+	'status_version'			=> "final",
+	'status'					=> "Final",
+	'date'						=> "24 Dec 2020",
 	'author_word'				=> "",
-	'warning'					=> _CO_ICMS_WARNING_RC,
+	'warning'					=> _CO_ICMS_WARNING_FINAL,
 
 /** Contributors */
 	'developer_website_url'		=> "https://www.impresscms.org",
@@ -74,17 +74,9 @@ $modversion = array(
 $modversion['tables'] = icms_getTablesArray($modversion['dirname'], $modversion['object_items']);
 
 $modversion['people']['developers'][] = "[url=https://www.impresscms.org/userinfo.php?uid=168]marcan[/url] (Marc-Andr&eacute; Lanciault)";
-$modversion['people']['developers'][] = "[url=https://www.impresscms.org/userinfo.php?uid=392]stranger[/url] (Sina Asghari)";
-$modversion['people']['developers'][] = "[url=https://www.impresscms.org/userinfo.php?uid=69]vaughan[/url]";
+$modversion['people']['developers'][] = "[url=https://www.impresscms.org/userinfo.php?uid=1102]fiammybe[/url] (Sina Asghari)";
 $modversion['people']['developers'][] = "[url=https://www.impresscms.org/userinfo.php?uid=54]skenow[/url]";
-$modversion['people']['developers'][] = "[url=https://www.impresscms.org/userinfo.php?uid=10]sato-san[/url]";
-$modversion['people']['developers'][] = "[url=https://www.impresscms.org/userinfo.php?uid=340]nekro[/url]";
-$modversion['people']['developers'][] = "[url=https://www.impresscms.org/userinfo.php?uid=1168]phoenyx[/url]";
-$modversion['people']['testers'][] = "[url=https://www.impresscms.org/userinfo.php?uid=53]davidl2[/url]";
-$modversion['people']['testers'][] = "[url=https://www.impresscms.org/userinfo.php?uid=10]sato-san[/url]";
 $modversion['people']['testers'][] = "[url=https://www.impresscms.org/userinfo.php?uid=10]fiammybe[/url]";
-$modversion['people']['translators'][] = "[url=https://www.impresscms.org/userinfo.php?uid=10]sato-san[/url]";
-$modversion['people']['translators'][] = "[url=https://www.impresscms.org/userinfo.php?uid=1168]phoenyx[/url]";
 //$modversion['people']['other'][] = "";
 
 /** No Manual yet, sorry */
