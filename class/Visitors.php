@@ -42,4 +42,3 @@ class mod_profile_Visitors extends icms_ipf_Object {
 		return parent::getVar($key, $format);
 	}
 }
-?>

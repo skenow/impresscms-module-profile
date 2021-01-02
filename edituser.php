@@ -31,7 +31,7 @@ switch ($op) {
 		$login_name = isset($_POST['login_name']) ? trim($_POST['login_name']) : '';
 		$uname = isset($_POST['uname']) ? trim($_POST['uname']) : '';
 		$email = isset($_POST['email']) ? trim($_POST['email']) : '';
-		$pass = isset($_POST['password']) ? icms_core_DataFilter::stripSlashesGPC($_POST['password']) : '';
+		$pass = isset($_POST['password']) ? icms_core_DataFilter::stripSlashesGPC(substr($_POST['password'], 0, 32)) : '';
 		$vpass = isset($_POST['vpass']) ? icms_core_DataFilter::stripSlashesGPC($_POST['vpass']) : '';
 
 		icms_loadLanguageFile('core', 'user');

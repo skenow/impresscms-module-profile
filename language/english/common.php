@@ -239,4 +239,3 @@ define("_AM_PROFILE_REGSTEPS", "Registration steps");
 define("_MI_PROFILE_VISIBILITY", "Visibility");
 define("_MI_PROFILE_PERMISSIONS", "Permissions");
 define("_MI_PROFILE_MODULEDESC", "This module simulates a social network software like MySpace or Orkut, please login or register now.");
-?>

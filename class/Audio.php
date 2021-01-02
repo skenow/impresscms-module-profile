@@ -108,4 +108,3 @@ class mod_profile_Audio extends icms_ipf_Object {
 		return $ret;
 	}
 }
-?>

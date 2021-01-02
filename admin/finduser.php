@@ -102,4 +102,3 @@ switch ($op) {
 }
 
 icms_cp_footer();
-?>

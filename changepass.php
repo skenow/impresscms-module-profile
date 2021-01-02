@@ -22,8 +22,8 @@ if (!isset($_POST['submit'])) {
 	$form = new icms_form_Theme(_MD_PROFILE_CHANGEPASSWORD, 'form', $_SERVER['REQUEST_URI'], 'post', true);
 	$form->addElement(new icms_form_elements_Password(_MD_PROFILE_OLDPASSWORD, 'oldpass', 10, 50), true);
 	$pwd_tray = new icms_form_elements_Tray(_MD_PROFILE_NEWPASSWORD.'<br />'._MD_PROFILE_VERIFYPASS);
-	$pwd_tray->addElement(new icms_form_elements_Password('', 'password', 10, 255, '', false, ($icmsConfigUser['pass_level'] ? 'password_adv' : '')));
-	$pwd_tray->addElement(new icms_form_elements_Password('', 'vpass', 10, 255));
+	$pwd_tray->addElement(new icms_form_elements_Password('', 'password', 10, 32, '', false, ($icmsConfigUser['pass_level'] ? 'password_adv' : '')));
+	$pwd_tray->addElement(new icms_form_elements_Password('', 'vpass', 10, 32));
 	$form->addElement($pwd_tray);
 	$form->addElement(new icms_form_elements_Button('', 'submit', _SUBMIT, 'submit'));
 	$form->assign($icmsTpl);
@@ -31,9 +31,9 @@ if (!isset($_POST['submit'])) {
 	$stop = '';
 	$member_handler = icms::handler('icms_member');
 	$username = icms::$user->getVar('uname');
-	$password = !empty($_POST['password']) ? icms_core_DataFilter::stripSlashesGPC(trim($_POST['password'])) : '';
-	$oldpass = !empty($_POST['oldpass']) ? icms_core_DataFilter::stripSlashesGPC(trim($_POST['oldpass'])) : '';
-	$vpass = !empty($_POST['vpass']) ? icms_core_DataFilter::stripSlashesGPC(trim($_POST['vpass'])) : '';
+	$password = !empty($_POST['password']) ? icms_core_DataFilter::stripSlashesGPC(trim(substr($_POST['password'], 0, 32))) : '';
+	$oldpass = !empty($_POST['oldpass']) ? icms_core_DataFilter::stripSlashesGPC(trim(substr($_POST['oldpass'], 0, 32))) : '';
+	$vpass = !empty($_POST['vpass']) ? icms_core_DataFilter::stripSlashesGPC(trim(substr($_POST['vpass'], 0, 32))) : '';
 	if (empty($password) || empty($oldpass) || empty($vpass)) {
 		$stop .=  _MD_PROFILE_PROVIDEPWDS;
 	} else {

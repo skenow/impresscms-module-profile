@@ -106,4 +106,3 @@ function b_profile_usermenu_show($options) {
 
 	return $block;
 }
-?>

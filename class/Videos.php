@@ -115,4 +115,3 @@ class mod_profile_Videos extends icms_ipf_Object {
 		return $ret;
 	}
 }
-?>

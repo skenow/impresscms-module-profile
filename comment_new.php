@@ -15,4 +15,3 @@
 
 include '../../mainfile.php';
 include ICMS_ROOT_PATH.'/include/comment_new.php';
-?>

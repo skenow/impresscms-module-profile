@@ -58,4 +58,3 @@ if ($op == "search") {
 }
 $form->display();
 icms_cp_footer();
-?>

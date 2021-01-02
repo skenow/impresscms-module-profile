@@ -114,4 +114,3 @@ if (in_array($clean_op, $valid_op, true)){
 	}
 	icms_cp_footer();
 }
-?>
